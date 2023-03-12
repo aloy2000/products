@@ -18,9 +18,8 @@ const handler = mw({
     }) => {
       try {
         const product = await ProductModel.query()
-          .select("products.*", "materials.id", "categories.id")
+          .select("*")
           .where("id", productId)
-          .join("materials", "materials.materialId", "products.id")
 
         if (!product) {
           res.send({
