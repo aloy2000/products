@@ -1,6 +1,8 @@
-import { faker } from "@faker-js/faker"
+// import { faker } from "@faker-js/faker"
+const fakerApp= require("@faker-js/faker")
+const faker = fakerApp.faker
 
-export const seed = async(knex) => {
+module.exports.seed = async(knex) => {
   // Deletes ALL existing entries
   await knex("products").del()
   await knex("materials").del()
@@ -11,7 +13,7 @@ export const seed = async(knex) => {
   for (let i = 0; i < 10; i++) {
     materials.push({
       name: faker.commerce.productMaterial(),
-      color: faker.commerce.color()
+      color: faker.color.human()
     })
   }
   await knex("materials").insert(materials)

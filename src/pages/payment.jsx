@@ -1,12 +1,12 @@
-import Transaction from "@/components/business/FormTransaction"
-import Footer from "@/components/business/Footer"
-import Header from "@/components/business/Header"
-import routes from "@/routes"
+import Transaction from "@/web/components/business/FormTransaction"
+import Footer from "@/web/components/business/Footer"
+import Header from "@/web/components/business/Header"
+import routes from "@/web/routes"
+import Button from "@/web/components/ui/Button"
 
 const payment = () => {
   return (
     <div>
-      <Header />
       <div class="m-20">
         <h1 class="text-3xl font-semibold flex justify-center">Payer</h1>
         <Transaction />
@@ -18,7 +18,6 @@ const payment = () => {
         <a href={routes.home}> Annuler </a>
       </div>
       <div>
-        <Footer />
       </div>
     </div>
   )

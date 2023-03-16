@@ -1,7 +1,7 @@
-import Header from "@/components/business/Header"
-import Footer from "@/components/business/Footer"
-import Button from "@/components/ui/Button"
-import routes from "@/routes"
+import Header from "@/web/components/business/Header"
+import Footer from "@/web/components/business/Footer"
+import Button from "@/web/components/ui/Button"
+import routes from "@/web/routes"
 
 const OrderConfirm = () => {
   return (

@@ -11,11 +11,12 @@ import Image from "next/image"
 import Logo from "../../../../ressources/img/logo.jpg"
 
 const Header = () => {
+
   return (
     <nav>
       <ul className="flex justify-end items-center pr-12 bg-black">
         <li className="flex grow justify-start pl-4">
-          <Image width={125} src={Logo}></Image>
+          <Image width={125} src={Logo} alt="logo"></Image>
         </li>
         <li className="mr-4">
           <Link href={routes.home()}>

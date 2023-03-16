@@ -1,9 +1,11 @@
-import { faker } from "@faker-js/faker"
-import bcrypt from "bcrypt"
+//  import { faker } from "@faker-js/faker"
+const fakerApp= require("@faker-js/faker")
+const faker = fakerApp.faker
+const bcrypt = require("bcrypt")
 
 const saltRounds = 10
 
-export const seed = async(knex) => {
+module.exports.seed = async (knex) => {
   await knex("users").del()
   const users = []
   for (let i = 0; i < 10; i++) {
@@ -21,6 +23,6 @@ export const seed = async(knex) => {
     users.push(user)
   }
 
-  
-return knex("users").insert(users)
+
+  return knex("users").insert(users)
 }

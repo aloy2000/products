@@ -1,11 +1,11 @@
-import Header from "@/components/business/Header"
-import Footer from "@/components/business/Footer"
+// import Header from "@/components/business/Header"
+// import Footer from "@/components/business/Footer"
 
 const MentionLegal = () => {
   return (
     <div>
       <div>
-        <Header />
+        {/* <Header /> */}
         <h1 className="text-3xl font-semibold flex start-center m-8">
           Mention Legale
         </h1>
@@ -23,7 +23,7 @@ const MentionLegal = () => {
         <p>Hébergeur : AIRNEIS IT</p>
         <p>Téléphone : +33 XX XX XX XX XX</p>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }
