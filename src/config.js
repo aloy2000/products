@@ -16,7 +16,7 @@ const config = {
       stub: resolve("./src/db/migration.stub"),
     },
     seeds: {
-      directory: resolve("./src/db/seeds"),
+      directory: resolve("./src/api/db/seeds"),
     },
   },
 }

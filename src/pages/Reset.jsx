@@ -1,12 +1,12 @@
-import MissedPassword from "@/components/business/FormMissedPassword"
-import Footer from "@/components/business/Footer"
-import Header from "@/components/business/Header"
-import routes from "@/routes"
+import MissedPassword from "@/web/components/business/FormMissedPassword"
+import Footer from "@/web/components/business/Footer"
+import Header from "@/web/components/business/Header"
+import routes from "@/web/routes"
 
 const Reset = () => {
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <div class="m-20">
         <h1 class="text-3xl font-semibold flex justify-center">
           Changer de mot de passe
@@ -15,7 +15,7 @@ const Reset = () => {
         <a href={routes.connect}> Annuler </a>
       </div>
       <div>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </div>
   )

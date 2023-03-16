@@ -1,11 +1,11 @@
-import SignIn from "@/components/business/FormSignIn"
-import Header from "@/components/business/Header"
-import Footer from "@/components/business/Footer"
-import routes from "@/routes"
+import SignIn from "@/web/components/business/FormSignIn"
+import Header from "@/web/components/business/Header"
+import Footer from "@/web/components/business/Footer"
+import routes from "@/web/routes"
 const Connexion = () => {
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <div class="m-20">
         <h1 class="text-3xl font-semibold flex justify-center">Connexion</h1>
         <div className="flex justify-center">
@@ -19,7 +19,7 @@ const Connexion = () => {
         </div>
       </div>
       <div>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </div>
   )

@@ -27,8 +27,15 @@ const handler = mw({
           })
         }
 
+        const similarProducts = await ProductModel.query()
+          .select("*")
+          .where("categoryId", product[0].categoryId);
+
+
+
         res.send({
           result: product,
+          resultSimilarProduct: similarProducts
         })
       } catch (err) {
         const error = err.response?.data?.error || "Oops. Something went wrong"

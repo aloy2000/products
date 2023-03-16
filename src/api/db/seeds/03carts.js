@@ -1,6 +1,8 @@
-import { faker } from "@faker-js/faker"
+// import { faker } from "@faker-js/faker"
+const fakerApp= require("@faker-js/faker")
+const faker = fakerApp.faker
 
-export const seed = async(knex) => {
+module.exports.seed = async(knex) => {
   await knex("carts").del()
 
   const carts = []
