@@ -64,8 +64,13 @@ const productpage = (props) => {
     <div>
       <div className="2xl:container 2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4 ">
         <div className="flex justify-center items-center lg:flex-row flex-col gap-8">
-          <div className=" w-full sm:w-96 md:w-8/12 lg:w-6/12 flex lg:flex-row flex-col lg:gap-8 sm:gap-6 gap-4">
+          <div className=" w-full sm:w-96 md:w-8/12 lg:w-6/12 flex lg:flex-col flex-col lg:gap-8 sm:gap-6 gap-4 mr-16">
             <Carousel />
+            <div className="flex justify-around">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(35).webp" alt="mini" className="h-[88px] w-[119px] mr-2" />
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(35).webp" alt="mini" className="h-[88px] w-[119px] mr-2" />
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(35).webp" alt="mini" className="h-[88px] w-[119px]" />
+            </div>
           </div>
 
           <div className="  w-full sm:w-96 md:w-8/12 lg:w-6/12 items-center">
